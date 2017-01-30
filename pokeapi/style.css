@@ -1,0 +1,12 @@
+body{
+    background-image: url(download.jpg);
+    background-repeat: no-repeat;
+}
+p{
+    font-size: 5em;
+    color: wheat;
+    text-align: center;
+}
+.row{
+    text-align: center;
+}

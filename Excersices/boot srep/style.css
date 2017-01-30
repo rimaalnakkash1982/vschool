@@ -1,0 +1,19 @@
+.red{ 
+    height: 100px;
+    border: 2px solid black;
+}
+.aqua{
+       border: 2px solid black;
+      height: 90px;
+}
+.black{
+    height: 100px;
+    padding: 10px;
+    background-color: black;
+}
+.yellow{
+     background-color: yellow;
+    height: 100px;
+    text-align: center;
+    border: 2px solid black;
+}  

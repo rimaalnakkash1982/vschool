@@ -1,0 +1,11 @@
+.row{
+    background-color: darkblue;
+    width: 100%;
+    font-size: 2em;
+    
+}
+.green{
+    background-color: darkgreen;
+    height: 100px;
+    text-align: center;
+}

@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    font-size: 25px;
+}
+
+table{
+    text-align: center;
+    border-spacing: 0px;
+    background-color: aqua;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 10px;
+        
+    
+}
+tr:nth-child(even){
+    background-color: #000;
+    color: white;
+}
+
+td, th {
+    padding: 14px 15px 14px 15px;
+    border: solid 1px purple;
+    border-left: 0px;
+    border-right: 0px;
+    width: 30px;
+}

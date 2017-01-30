@@ -1,0 +1,40 @@
+.pink{
+    background-color: hotpink;
+    height: 100px;
+    margin: 5px;
+    
+
+}
+.red{
+    background-color: red;
+    height: 100px;
+    margin: 5px;
+    
+   
+}
+.blue{
+    background-color: blue;
+    height: 100px;
+    margin: 5px;
+    
+   
+}
+.green{
+    background-color: green;
+    height: 100px;
+    margin: 5px;
+    
+    
+}
+.orange{
+    background-color: orangered;
+    height: 100px;
+    margin: 5px;
+    
+}
+body{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin: 5px;
+ 
+}

@@ -1,0 +1,110 @@
+body {
+    background: url(main.jpg);
+    background-size: cover;
+ 
+    background-position: center;
+}
+img {width: 15em;
+    height: 15em;
+
+    
+}
+.devil4{
+    float: right;
+    position: sticky;
+    
+    
+}
+.devil5{ 
+float: left;
+    width: 25%;
+    text-align: center;  
+}
+
+button{ 
+    color: azure;
+    background-color: black;
+    font-size:20em;
+}
+.harry{
+    font-size: 7em;
+    text-align: center;
+    font-style: italic;
+    color: red;
+    
+    margin-bottom: 3%;
+}
+.col-md-12>img{
+    text-align: center; 
+    margin-bottom: 10px;
+}
+footer{
+    color: white;
+    font-size: 1em;
+   position: absolute;
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    font-style: oblique;
+    bottom: 0;
+}
+.btn-total{
+    margin: 20px;
+}
+input{
+    color: white;
+    background-color: gray;
+    height: auto;
+    font-size: 1em;
+}
+.devil1{
+   width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 50px:
+}
+.devil2{
+   width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin-top:50px:
+}
+.devil3{
+   width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 50px:
+}
+h3{
+    color:white !important;
+    
+}
+@media (max-width: 700px) {
+  .box {
+    width:100%;
+    background: cyan;
+    font-size: 20px;
+  }
+    p{
+       font-size:5em;
+    }
+}
+
+
+
+
+   
+    
+    
+
+
+

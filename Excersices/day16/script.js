@@ -1,0 +1,15 @@
+$(".box").hover(function(){
+    $(this).css("background-color","yellow");
+});
+$(".box").on("dblclick",function(){
+    $(this).css("background-color","green");
+});
+$(".box").on("mousedown",function(){
+    $(this).css("background-color","red");
+});
+$(window).scroll(function(){
+    $(".box").css("background-color","blue")
+})
+ $(".box").on("mouseout",function(){
+    $(this).css("background-color","purple");
+});               

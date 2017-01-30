@@ -1,0 +1,26 @@
+body {
+    font-family: 'Kumar One', cursive;
+}
+.yallow{
+    background-color: yellow;
+    width: 100%;
+}
+.luigi{
+    color:red;
+    font-size: 6em;
+}
+.red{
+    background: red;
+    height: 400px;
+}
+.about{
+    font-size: 5em;
+    text-align: center;
+}
+.contaner-fluid{
+    
+}
+.img{
+    text-align: center;
+    text-align: center;
+}

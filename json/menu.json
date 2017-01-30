@@ -1,0 +1,35 @@
+{
+	"menu": {
+		"items": [{
+			"name": "coke",
+			"qty": 20,
+			"category": "cold drinks",
+			"sizes": ["small", "large"]
+		}, {
+			"name": "tea",
+			"qty": 10,
+			"category": " hot drinks",
+			"sizes": ["small", "large"]
+		}, {
+			"name": "water",
+			"qty": 20,
+			"category": "drinks",
+			"sizes": ["small", "large"]
+		}, {
+			"name": "hamburger",
+			"qty": 40,
+			"category": "junk food",
+			"sizes": ["small", "large"]
+		}, {
+			"name": "fries",
+			"qty": 20,
+			"category": "junk food",
+			"sizes": ["small", "large"]
+		}, {
+			"name": "tuna",
+			"qty": 20,
+			"category": "cold food",
+			"sizes": ["small", "large"]
+		}]
+	}
+}

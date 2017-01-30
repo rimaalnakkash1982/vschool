@@ -1,0 +1,24 @@
+img{
+    width: 100%;
+    height: 500px;
+}
+body{
+    background-color:#87CEEB;
+    font-size: 2em;
+}
+label{
+    color: #004d66;
+}
+input{
+    background-color: #ccf2ff;
+    color:#004d66;
+}
+select{
+    color:darkblue;
+}
+option{
+    color:darkblue;
+}
+#checkbox{
+   color:darkblue; 
+}
