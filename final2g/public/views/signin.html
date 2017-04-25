@@ -1,0 +1,30 @@
+<!--
+<div class="row">
+     <div class=" col-md-2 col-xs-1">
+         
+     </div>
+      <div class="col-md-8">
+    <input ng-model="userinput.username" placeholder="User name">
+    <input ng-model="userinput.password" placeholder="Password" type="password">
+        <button ng-click="signin()">sign In</button> 
+ </div>
+</div>
+-->
+<div id="login" class="container">
+	<section id="content">
+		<form action="">
+			<h1>Login Form</h1>
+			<div>
+				<input ng-model="userinput.username" type="text" placeholder="Username" required="" id="username" />
+			</div>
+			<div>
+				<input ng-model="userinput.password" type="password" placeholder="Password" required="" id="password" />
+			</div>
+			<div>
+				<input type="submit" value="Log in" />
+			</div>
+		</form><!-- form -->
+		<div ng-click="signin()" class="button">
+		</div><!-- button -->
+	</section><!-- content -->
+</div><!-- container -->

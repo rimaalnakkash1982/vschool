@@ -1,0 +1,98 @@
+<div ng-init="getDatas()">
+   <div class="add">
+    <div class="row">
+        <div class="col-md-12">
+            <button class="btn btn-success"><a href="#/addPost" class="pageNav">Add New Post</a></button>
+        </div>
+    </div>
+    
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="col-md-4">
+                    <div ng-if="userInput.isEdit">
+                        <input ng-model="userInput.name">
+                        <input ng-model="userInput.descrption">
+                        <button ng-click="save(userInput._id,item)">Save</button>
+                    </div>
+                </div>
+                <div ng-repeat="item in todoItem track by $index">
+                    <div ng-if="!userInput.isEdit">
+                        <p>{{item.title}}</p>
+                        <p>{{item.descrption}}</p>
+                        <p class="wow fadeInUp" data-wow-delay="0.6s">{{item.image}}</p>
+                        <button ng-click="toggleEdit($index)" class="baaa">Edit</button>
+                        <button ng-click="remove(item._id)" class="baaa">X</button>
+                     </div>
+                    <div>
+                        <!--
+                <input ng-model="userInput.name">
+                <input ng-model="userInput.cost" type="number">
+                
+-->
+                        <input ng-model="item.title" class="form-control">
+                        <input ng-model="item.image" class="form-control">
+                        <textarea ng-model="item.description" class="form-control"></textarea>
+                        <button ng-click="addItem()">Add</button>
+                    </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="col-md-6">
+                        <!--like button-->
+                        <div class="button-area">
+                            <label class="likeTxtStyle">{{item.upVoted}}</label>
+                            <button class="btn btn-warning glyphicon glyphicon-thumbs-up" ng-click="like(item._id)" title="Like"></button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <!--unlike button-->
+                        <div class="button-area">
+                            <label class="likeTxtStyle">{{item.downVoted}}</label>
+                            <button class="btn btn-warning glyphicon glyphicon-thumbs-down" ng-click="unlike(item._id)" title="unLike"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row btnPostion">
+                <div class="col-md-4">
+                    <!--add a comment -->
+                    <button ng-click="showHideAddComment(item._id)" class="btn btn-warning" title="Add">Comment</button>
+                </div>
+                <div class="col-md-4 ">
+                    <!--edit part-->
+                    <button ng-click="editStatus(item._id)" class="btn btn-warning" title="Edit">Edit</button>
+                </div>
+                <div class="col-md-4">
+                    <!--  show Comments-->
+                    <button ng-click="showHideComment(item._id)" class="btn btn-warning" title="Show">Show More Comment</button>
+                </div>
+            </div>
+            <!--add Comment part-->
+            <div class="row">
+                <div class="col-md-8 col-md-offset-1">
+                    <div ng-if="item.isShowingAddComment">
+                        <textarea ng-model="commentTxt" placeholder="Enter a Comment" class="form-control CommentBox" placeholder="Enter a Comment"></textarea>
+                        <div class="col-md-9 col-md-offset-11">
+                            <button ng-click="addComment(commentTxt);showHideAddComment()" class="glyphicon glyphicon-plus btn btn-warning AddCommentBt" title="Add"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-md-offset-1">
+                    <div ng-repeat="comment in item.Comment track by $index">
+                        <div ng-if="item.isShowingComment">
+                            <div class="col-md-8 CommentStyle">
+                                <p>{{comment}}</p>
+                            </div>
+                            <div class="col-md-2 col-md-pull-1">
+                                <button ng-click="removeComment($index)" class="glyphicon glyphicon-trash btn btn-danger deleteCommentBtn" title="Remove"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>

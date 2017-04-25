@@ -1,0 +1,31 @@
+<h1>Let Us See </h1>
+<div class="row marginejojo" id="qwer" ng-init="loadData()">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <div ng-repeat="item in todoItems track by $index" class="blabla">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="jumbotron">
+                            <img ng-src="view/comment/images.png" class="img">  
+                            
+                            <h2>{{item.title}}</h2>
+                            <h3> {{item.description}}</h3>
+                           
+                            <div ng-repeat="comment in item.comments track by $index" class="repeat">
+                                <div class="coments">{{comment}}</div>
+                            </div>
+                           
+                            <div class="row">
+    <div class="col-md-12"><textarea ng-model="text" placeholder="Comments"></textarea></div>
+</div>
+                            
+                            <button ng-click="upp(item._id,item.likes)" class="glyphicon glyphicon glyphicon-thumbs-up btn btn-info" name="Likes" id="like"> {{item.likes}} </button>
+                            <button ng-click="down(item._id,item.disLike)" class="glyphicon glyphicon-thumbs-down btn btn-info" name="Dislikes" id="like"> {{item.disLike}} </button>
+                            <button ng-click="addComment(item._id, text)" class="glyphicon glyphicon-envelope btn btn-info" name="comments" id="like"> Comments</button>
+                            <button ng-click="addComment(item._id, text)" class="glyphicon glyphicon-envelope btn btn-info" name="comments" id="like"> Comments</button>
+                            <button ng-click="remove(item._id, text)" class="glyphicon glyphicon-trash btn btn-info" name="comments" id="like"></button>
+                            
+                        </div>
+                    </div>
+                </div>
+    </div>

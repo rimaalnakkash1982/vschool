@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+.red {
+    height: 300px;
+    width: 50%;
+    background: red;
+    border: 5px white solid;
+    float: left;
+}
+
+.blue {
+    height: 300px;
+    width: 50%;
+    background: blue;
+    border: 5px white solid;
+    float: left;
+}
+
+.yellow {
+    height: 300px;
+    width: 50%;
+    border: 5px white solid;
+    float: left;
+    background-color: yellow;
+}
+
+.green {
+    height: 300px;
+    width: 50%;
+    background: green;
+    border: 5px white solid;
+    float: left;
+}
+
+@media (max-width: 700px) {
+    .box {
+        width: 100%;
+        background: cyan;
+        font-size: 20px;
+    }
+}
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">

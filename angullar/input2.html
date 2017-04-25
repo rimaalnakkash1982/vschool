@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>angular</title>
+</head>
+
+<body ng-app="myApp" ng-controller="mainController">
+    <input ng-model="name" type="text" placeHolder="Name">
+    <input ng-model="cost" type="number" placeHolder="Cost">
+    <button ng-click="add()">ADD</button>
+    <div ng-repeat="item in storeItem track by $index">
+
+        <div>{{item.cost}}
+        </div>
+        <div>{{item.name}}
+        </div>
+    </div>
+    <div ng-module="total">{{total}}
+    </div>
+    <script src="https://code.angularjs.org/1.6.1/angular.min.js"></script>
+    <script src="store.ng.js"></script>
+    <script src="service4.js"></script>
+</body>
+
+</html>

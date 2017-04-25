@@ -1,0 +1,80 @@
+body{
+    text-align: center;
+    background-image: url(pexels-photo-195655.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.navbar navbar-default{
+    background-color: white;
+    color: black;
+}
+h1{
+    color: black;
+   font-family: 'Pacifico', cursive;
+    margin-bottom: 40px;
+    font-size: 3em;
+    
+}
+input{
+
+    width:80%;
+    font-size: 2em;
+    color: blue;
+}
+h2{
+    color: rgb(91, 192, 222);
+text-align: center;
+    
+}
+#qwer{
+  text-align: center;
+    margin-top: 15px
+   
+}
+.row{
+    font-family: 'Pacifico', cursive;
+font-family: 'Clicker Script', cursive;
+}
+.coments{
+font-family: 'Clicker Script', cursive;
+font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    word-wrap: break-word;
+    width: 100%;
+}
+.btn btn-info btn-lg{
+    font-size: 1em !important;
+}
+textarea{
+    width:70%;
+}
+img{
+    float: left;
+    width: 55px;
+    height:55px;
+    margin-left: -20px;
+}
+.btn btn-info btn-lg{
+    margin-bottom: 10px;
+}
+.blabla{
+    width: 100%;
+}
+.img{
+    margin-left: 15px;
+     width: 70px;
+    height:70px;
+}
+
+#like{
+    margin-right: 2.5%;
+    margin-top: 10px;
+}
+#home{
+    margin-left: 5px;
+}
+.jumbotron{
+    background-color: rgba(239,239,239,0.73);
+   border-radius: 15px;
+}

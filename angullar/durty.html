@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Miro Ajax </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     </head>
+
+<body>
+    <nav class="navbar navbar-right"> 
+        <div class="container-fuild"></div>
+        <div class="navbar header">
+            <a class="navbar-brand" href="LlLL" > </a>
+            <p><b>Characters Hit list</b></p>
+        </div>
+    </nav>
+    <div class="container">
+       <div ng-app="myApp">
+                    <div ng-controller="mainController">
+        <div class="row">
+            <div class="col-md-4">
+                    <div ng-repeat="pic in arr track by $index">
+                        <p> {{pic.title}}</p>
+                         <img ng-src="{{pic.img}}"/>
+                        </p>
+                </div>
+            </div>
+  
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+<script src="https://code.angularjs.org/1.6.1/angular.min.js"></script>
+<script src="durty.js"></script>
+
+</html>

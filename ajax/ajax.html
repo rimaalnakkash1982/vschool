@@ -13,14 +13,16 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <input id='desc' placeHolder="desc" type="text">
-                <input id="Url" placeHolder="Url">
-                <input id="completed" placeHolder="completed" type="text">
-                <input id='price' placeHolder="price" type="number">
-                <button id="get" class="btn btn-primary">Get </button>
-                <button id="submit" class="btn btn-danger">submit </button>
-                <button id="delete" class="btn btn-default">Delete</button>
-                <button id="update" class="btn btn-success">Put </button>
+              <div ng-app="myApp">
+        <div ng-controller="mainController">
+          <input ng-model="name" type="text"
+           placeHolder="Name">
+          <button ng-click="submit()">Submit</button> 
+           <ul ng-repeat="name in arr track by $index">
+               <li ng-click="remove($index)">{{name}}</li>
+            </ul>
+        </div>
+    </div>
             </div>
         </div>
     </div>
@@ -28,6 +30,6 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous">
 </script>
-<script src="aja.js"></script>
+<script src=""></script>
 
 </html>

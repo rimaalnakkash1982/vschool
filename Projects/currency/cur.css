@@ -1,0 +1,24 @@
+#money{
+    padding: 25px;
+}
+body {
+    box-sizing: border-box;
+    font-size: 3em;
+    text-align: center;
+    background-color: rgb(142, 91, 34);
+ 
+}
+
+input{
+    background-color: rgb(252, 217, 163);
+}
+button{
+    text-align: center!important;
+    margin-top: 50px;
+    background-color: #dd964d;
+}
+img{
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+}

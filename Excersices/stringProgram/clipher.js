@@ -1,7 +1,7 @@
 var ask = require('readline-sync');  
  function CaesarCipher(){
 var str = ask.question('What phrase would you like to encrypt? ').toLowerCase();  
-var num = parseInt(ask.question('How many letters would you like to shift? ')); 
+
                               
     str = str.toLowerCase();
     

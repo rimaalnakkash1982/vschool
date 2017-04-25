@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Miro Ajax </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> </head>
+
+<body ng-app="myApp" ng-controller="mainController" ng-init="getData()">
+    <h2><b>To Do List</b></h2>
+    <div class="container">
+        <div class="row">
+         <div class="col-md-2">
+               <input ng-model="post" type="text" placeHolder="Name">
+            </div>
+            <div class="col-md-2">
+               <input ng-model="post" type="number" placeHolder="Age">
+            </div>
+            <div class="col-md-2">
+               <input ng-model="post" type="text" placeHolder="Favorite Food">
+            </div>
+               <div class="col-md-2">
+               <button ng-click="postD(data)"class="btn btn-danger">Post</button>
+            </div>
+             <div class="col-md-2">
+               <input ng-model="update" type="text" placeHolder="Update title">
+               <button ng-click="edit(item._id,update)" class="btn btn-primery">Update</button>
+            </div
+            </div>
+        <div class="row" ng-repeat="item in todoList">
+            <div class="col-md-6" >
+                <p ng-model="todo">{{item.title}} </p>
+            </div>
+                <div class="col-md-6" >
+               <button ng-click="remove(item._id)">Delete</button>
+            </div>
+            >
+          
+        </div>
+    </div>
+</body>
+<script src="https://code.angularjs.org/1.6.1/angular.min.js"></script>
+<script src="./js/app.js"></script>
+
+</html>

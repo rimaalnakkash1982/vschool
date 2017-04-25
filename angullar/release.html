@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Miro Ajax </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="release.css">
+</head>
+
+<body>
+    <h1><b>Release </b></h1>
+    <div class="container">
+        <div ng-app="myApp">
+            <div ng-controller="mainController">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="Red" ng-model="num" type="text">{{num}}</div>
+                                <button ng-click="red()" class="btn btn-danger">Red</button>
+                            </div>
+                    </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="Blue" ng-model="num2" type="text">{{num2}}</div>
+                                <button ng-click="blue()" class="btn btn-primary">Blue</button>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+<script src="https://code.angularjs.org/1.6.1/angular.min.js"></script>
+<script src="service2.js"></script>
+
+</html>

@@ -1,0 +1,18 @@
+body{
+    text-align: center;
+    background-color: burlywood;
+}
+.btn btn-danger{
+    font-size: 2em;
+    padding: 5px;
+    
+}
+.btn btn-primary{
+    font-size: 2em;
+    padding: 5px;
+    
+}
+h1{
+    color: brown;
+}
+

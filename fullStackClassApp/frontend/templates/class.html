@@ -1,0 +1,18 @@
+<table>
+    <tr>
+        <th></th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+    </tr>
+    <tr ng-repeat="student in studentList track by $index">
+        <td>
+            <button ng-click="deleteStudent(student._id, $index)">X</button>
+        </td>
+        <td>{{student.firstName}}</td>
+        <td>{{student.lastName}}</td>
+        <td>{{student.age}}</td>
+        <td>{{student.gender}}</td>
+    </tr>
+</table>

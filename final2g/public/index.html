@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>المقاصد</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="default.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+
+<body ng-app="app">
+    <div id="header-wrapper">
+        <div id="header-wrapper2">
+            <div id="header" class="container">
+                <div id="logo">
+                    <h2><strong>وحدة شؤون المتطوعين المقاصديين </strong></h2>
+                </div>
+                <div id="menu">
+                    <ul>
+                        <li  class="current_page_item "><a class="glyphicon glyphicon-home"href="#/home" accesskey="1" title="">Homepage</a></li>
+                        <li><a class="glyphicon glyphicon-camera" href="#/addData" accesskey="2" title="">Photo-Galary</a></li>
+                        <li><a class="glyphicon glyphicon-user" href="#/signin" accesskey="3" title="">Login </a></li>
+                        <li><a class="glyphicon glyphicon-log-out" href="#/signup" accesskey="4" title="">SignUp</a></li>
+                        <li><a class="glyphicon glyphicon-pushpin" href="#/cal" accesskey="5" title="">Event</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img id="img" src="/images/logov.jpg">
+
+    <ng-view DIR="RTL"></ng-view>
+    <br>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div id="portfolio-wrapper">
+                <div id="portfolio" class="container">
+<!--                    <h3 class="contactUs"><strong>Contact Us</strong></h3>-->
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+
+                            <span> Tel <small>  01/636791 </small></span>
+                            <br/>
+                            <span class="p-l-28">  Fax <small>  01/700508 </small></span>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                             <span> Adress <small> Lebanon,Beirut,Tariq Al-Jadida <br>
+                             Near Makkased Hospital</small></span>
+                      
+                         
+                        </div> 
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div id="copyright" class="container">
+                <div><small>Copyright (c) 2017 Rima Al-Nakkash  All rights reserved  </small>| <div  class="glyphicon glyphicon-phone">  009613041189</div></div>
+            </div>
+        </div>
+    </div>
+    <script src="liks/angular.js"></script>
+       
+    <script src="liks/ang.js"></script>
+    <script src="app.js"></script>
+    <script src="views/app.home.js"></script>
+    <script src="views/signin.js"></script>
+<!--    <script src="views/signup.js"></script>-->
+    <script src="views/addPost.js"></script>
+    <script src="views/onePost.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/service.js"></script>
+</body>
+
+</html>

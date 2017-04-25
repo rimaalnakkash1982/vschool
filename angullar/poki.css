@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+    display: block;
+    background-color: yellow;
+}
+.bal{
+    float: left;
+}
+.bala{
+    float: right;
+    background-color: yellow;
+}

@@ -1,0 +1,18 @@
+body{
+    text-align: center;
+
+}
+p{
+    font-size: 4em !important;
+}
+img{
+    width:50px;
+    height: 50px;
+}
+button{
+    margin-top: 100px;
+}
+input{
+    padding: 5px;
+    margin-top: 50px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+</head>
+
+<body ng-app="myApp" ng-controller="ctrl">
+   <h1>Welcome To Our Shop</h1>
+   <h3>What Would You like to Buy?</h3>
+     <select ng-model="name" ng-options="nameItem for nameItem in shopDropDown">
+</select>
+    <input ng-model="amount" type="number" placeHolder="Amount">
+    <input ng-model="price" type="number" placeHolder="Price">
+    <button ng-click="addShopItem()">Add</button>
+   
+
+    <ul ng-repeat="item in items">
+        <item-in-shop name="item.name" amount="item.amount" price="item.price" currency="$"></item-in-shop>
+
+    </ul>
+
+    <script src="https://code.angularjs.org/1.6.2/angular.min.js"></script>
+    <script src="js/directive/dercName.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

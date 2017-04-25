@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>first html</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+   <body ng-app="myApp" ng-controller="mainController" ng-init="loadData()">
+    <div class="row">
+        <div class="col-md-4" ng-repeat="item in data">
+            <p> {{item.name}}</p>
+        </div>
+    </div>
+</body>
+<script src="https://code.angularjs.org/1.6.1/angular.min.js"></script>
+<script src="./js/app.js"></script>
+
+</body>
+</html>
